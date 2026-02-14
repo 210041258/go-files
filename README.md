@@ -228,3 +228,7 @@ Internal / Custom
 ------------------------------------------------------------------------
 
 **Go TestUtils --- Enterprise Backend Toolkit for Go Systems**
+
+https://github.dev/210041258/go-files/blob/ed4d4c0daa3c1b055d9600eb6ee4aa56cfee2e59/go_testutils_architecture.png
+
+https://github.dev/210041258/go-files/blob/ed4d4c0daa3c1b055d9600eb6ee4aa56cfee2e59/go_testutils_microservices_topology.png
