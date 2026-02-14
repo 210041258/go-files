@@ -7,13 +7,6 @@
 Enterprise-grade utility framework for building, testing, and operating
 high-performance web APIs and distributed systems in Go.
 
-[Uploading go_testutils_microser[InternetShortcut]
-URL=https://raw.githubusercontent.com/210041258/go-files/refs/heads/main/go_testutils_microservices_topology.png
-vices_topology.png (2850×1907).url…]()
-
-[Uploading go_testut[InternetShortcut]
-URL=https://raw.githubusercontent.com/210041258/go-files/refs/heads/main/go_testutils_architecture.png
-ils_architecture.png (2385×1677).url…]()
 
 ------------------------------------------------------------------------
 
