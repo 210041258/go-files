@@ -1,0 +1,156 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose",
+    "multer",
+    "mysql2",
+    "pg",
+    "cors",
+    "dotenv",
+    "bcryptjs",
+    "jsonwebtoken",
+    "api",
+    "backend",
+    "server",
+    "database",
+    "authentication",
+    "authorization"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-website.com",
+    "organization": "Your Organization",
+    "roles": [
+      "Developer",
+      "Maintainer"
+    ],
+    "social": {
+      "twitter": "https://twitter.com/your-profile",
+      "linkedin": "https://linkedin.com/in/your-profile",
+      "github": "https://github.com/your-username",
+      "facebook": "https://facebook.com/your-profile",
+      "instagram": "https://instagram.com/your-profile",
+      "website": "https://your-website.com",
+      "email": "mailto:your.email@example.com",
+      "other": "https://your-other-profile.com",
+      "description": "Connect with me on social media!",
+      "icon": "https://your-website.com/icon.png",
+      "verified": true,
+      "followers": 1000,
+      "following": 500,
+      "posts": 200,
+      "lastActive": "2024-06-01T12:00:00Z",
+      "badges": [
+        "Top Contributor",
+        "Open Source Enthusiast"
+      ],
+      "location": "Your City, Your Country",
+      "timezone": "Your Timezone",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "interests": [
+        "Coding",
+        "Traveling",
+        "Cooking"
+      ],
+      "bio": "A passionate developer with a love for open source and community engagement.",
+      "contact": {
+        "email": "your.email@example.com",
+        "phone": "+1234567890",
+        "address": "123 Your Street, Your City, Your Country"
+      }
+    }
+  },
+  "contributors": [
+    {
+      "name": "Contributor One",
+      "email": "contributor.one@example.com",
+      "url": "https://contributor-one-profile.com",
+      "roles": [
+        "Developer",
+        "Tester"
+      ],
+      "social": {
+        "twitter": "https://twitter.com/contributor-one",
+        "linkedin": "https://linkedin.com/in/contributor-one",
+        "github": "https://github.com/contributor-one"
+      }
+    },
+    {
+      "name": "Contributor Two",
+      "email": "contributor.two@example.com",
+      "url": "https://contributor-two-profile.com",
+      "roles": [
+        "Designer",
+        "Documenter"
+      ],
+      "social": {
+        "twitter": "https://twitter.com/contributor-two",
+        "linkedin": "https://linkedin.com/in/contributor-two",
+        "github": "https://github.com/contributor-two"
+      },
+      "badges": [
+        "Bug Fixer",
+        "Feature Implementer"
+      ],
+      "location": "Contributor City, Contributor Country",
+      "timezone": "Contributor Timezone",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "interests": [
+        "Design",
+        "Documentation",
+        "Community Support"
+      ],
+      "website": "https://contributor-two-website.com",
+      "bio": "A dedicated contributor focused on improving project design and documentation.",
+      "contact": {
+        "email": "contributor.two@example.com",
+        "phone": "+0987654321",
+        "address": "456 Contributor Street, Contributor City, Contributor Country"
+      }
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/your-repo.git",
+    "directory": "src",
+    "branch": "main"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/your-repo/issues"
+  },
+  "homepage": "https://your-username.github.io/your-repo",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.6",
+    "mysql2": "^3.16.3",
+    "nodemon": "^3.1.11",
+    "pg": "^8.18.0"
+  }
+}

@@ -1,0 +1,161 @@
+web_api_test/
+├── 📁 .github/                          # GitHub automation
+│   ├── workflows/
+│   │   ├── ci.yml                      # Build & test pipeline
+│   │   ├── cd.yml                      # Deployment pipeline
+│   │   ├── security-scan.yml           # SAST / dependency scanning
+│   │   └── release.yml                 # Versioned releases
+│   ├── ISSUE_TEMPLATE/                # Bug & feature templates
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── dependabot.yml
+│
+├── 📁 config/                          # Configuration management
+│   ├── base.yml                        # Shared defaults
+│   ├── development.yml
+│   ├── production.yml
+│   ├── test.yml
+│   └── database/
+│       ├── mongo.config.js
+│       ├── mysql.config.js
+│       ├── postgres.config.js
+│       └── redis.config.js
+│
+├── 📁 src/
+│   ├── 📁 api/                         # API layer (interface)
+│   │   ├── v1/
+│   │   │   ├── routes/                 # Route definitions only
+│   │   │   ├── controllers/            # HTTP adapters
+│   │   │   ├── validators/             # Joi/Zod schemas
+│   │   │   ├── serializers/            # Response mapping
+│   │   │   └── index.js
+│   │   └── v2/                         # Future API version
+│   │
+│   ├── 📁 application/                 # Application layer (use cases)
+│   │   ├── auth/
+│   │   │   ├── login.usecase.js
+│   │   │   ├── register.usecase.js
+│   │   │   └── refresh-token.usecase.js
+│   │   ├── users/
+│   │   └── files/
+│   │
+│   ├── 📁 domain/                      # Pure business logic
+│   │   ├── entities/                   # Domain entities
+│   │   ├── value-objects/              # Email, ID, Role, etc.
+│   │   ├── repositories/               # Interfaces only
+│   │   ├── services/                   # Domain services
+│   │   └── events/                     # Domain events
+│   │
+│   ├── 📁 infrastructure/              # External concerns
+│   │   ├── database/
+│   │   │   ├── strategies/
+│   │   │   │   ├── base.strategy.js
+│   │   │   │   ├── mongo.strategy.js
+│   │   │   │   ├── mysql.strategy.js
+│   │   │   │   └── postgres.strategy.js
+│   │   │   ├── connection-pool.js
+│   │   │   ├── migrations/
+│   │   │   └── seeders/
+│   │   │
+│   │   ├── cache/                      # Redis adapters
+│   │   ├── queue/                      # BullMQ / RabbitMQ
+│   │   ├── storage/                    # Local / S3 / GCS
+│   │   └── email/                      # SMTP / SES adapters
+│   │
+│   ├── 📁 middleware/                  # HTTP middleware
+│   │   ├── auth.middleware.js
+│   │   ├── validation.middleware.js
+│   │   ├── error.middleware.js
+│   │   ├── logging.middleware.js
+│   │   ├── rate-limit.middleware.js
+│   │   └── security.middleware.js
+│   │
+│   ├── 📁 core/                        # App bootstrap & runtime
+│   │   ├── app.js                      # Express configuration
+│   │   ├── server.js                   # HTTP server
+│   │   ├── logger.js                   # Winston / Pino
+│   │   ├── metrics.js                  # Prometheus metrics
+│   │   └── health.js
+│   │
+│   ├── 📁 shared/                      # Cross-cutting utilities
+│   │   ├── constants.js
+│   │   ├── errors.js
+│   │   ├── helpers.js
+│   │   ├── validators.js
+│   │   └── formatters.js
+│   │
+│   └── index.js                        # Entry point
+│
+├── 📁 tests/
+│   ├── unit/
+│   ├── integration/
+│   ├── contract/                       # OpenAPI / Pact tests
+│   ├── e2e/
+│   ├── load/
+│   ├── fixtures/
+│   └── mocks/
+│
+├── 📁 go/                              # High-performance tooling
+│   ├── cmd/
+│   │   ├── load-tester/
+│   │   ├── data-generator/
+│   │   ├── contract-validator/
+│   │   └── monitor/
+│   ├── pkg/
+│   │   ├── api-client/
+│   │   ├── data-simulator/
+│   │   ├── reporting/
+│   │   └── metrics/
+│   ├── internal/                       # Private Go packages
+│   ├── go.mod
+│   ├── go.sum
+│   └── Makefile
+│
+├── 📁 docker/
+│   ├── base/                           # Shared Docker layers
+│   ├── dev/
+│   ├── prod/
+│   └── ci/
+│
+├── 📁 docs/
+│   ├── api/                            # OpenAPI / Swagger
+│   ├── architecture/                   # Diagrams & ADRs
+│   ├── deployment/
+│   ├── security/
+│   └── examples/
+│
+├── 📁 scripts/
+│   ├── setup.sh
+│   ├── deploy.sh
+│   ├── migrate.sh
+│   ├── rollback.sh
+│   └── backup.sh
+│
+├── 📁 uploads/
+│   ├── temp/
+│   ├── processed/
+│   └── archives/
+│
+├── 📁 observability/
+│   ├── prometheus.yml
+│   ├── grafana/
+│   └── alerts.yml
+│
+├── .env.example
+├── .env
+├── .dockerignore
+├── .gitignore
+├── docker-compose.yml
+├── docker-compose.override.yml
+├── Dockerfile
+├── Dockerfile.dev
+├── package.json
+├── package-lock.json
+├── nodemon.json
+├── jest.config.js
+├── eslint.config.js
+├── prettier.config.js
+├── tsconfig.json
+├── README.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+└── LICENSE
